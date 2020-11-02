@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import DetailPoke from 'components/PokemonDetail/DetailPoke'
+import 'components/PokemonDetail/index.css'
 
 export default function Index(props) {
     const [pokeDetail, setPokeDetail] = useState([]);
@@ -28,7 +29,7 @@ export default function Index(props) {
     }else{
         return (
             <div className="PokeDet">
-                <h1 className="text-center mt-3">Pokemon Detail</h1>
+                <h1 className="text-center mt-5">Pokemon Detail</h1>
                 <DetailPoke pokeDetail={pokeDetail}/>
             </div>
         )

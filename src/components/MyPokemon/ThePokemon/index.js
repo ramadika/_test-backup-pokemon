@@ -1,17 +1,29 @@
 import React, { Component } from 'react'
+import Table from 'react-bootstrap/Table'
 
 export class index extends Component {
     render() {
         const { thePoke } = this.props;
         return (
             <div>
-                {thePoke.map(poke => 
-                <div>
-                    <span className="badge badge-light m-2">{poke.nickname}</span>
-                    <span className="badge badge-info m-1">{poke.name}</span>
-                    <button className="btn btn-danger btn-sm m-2 ml-5">Delete</button>
-                </div>
-                )}
+                <Table responsive="sm">
+                    <thead>
+                    <tr>
+                        <th>Nickname</th>
+                        <th>Pokemon</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {thePoke.map(poke => 
+                        <tr>
+                            <td ><span className="badge badge-light">{poke.nickname}</span></td>
+                            <td ><span className="badge badge-info">{poke.name}</span></td>
+                            <td ><button className="btn btn-danger btn-sm">Delete</button></td>
+                        </tr>
+                    )}
+                    </tbody>
+                </Table>
             </div>
         )
     }

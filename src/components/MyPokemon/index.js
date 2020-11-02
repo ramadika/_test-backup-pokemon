@@ -13,9 +13,15 @@ export class index extends Component {
     }
     render() {
         return (
-            <div className="text-center myPoke">
-                <h1 className="my-3">My Pokemon</h1>
-                <ThePokemon thePoke={this.state.thePoke}/>
+            <div>
+                <div className="text-center myPoke mb-5">
+                    <h1 className="my-5">My Pokemon</h1>
+                    <ThePokemon thePoke={this.state.thePoke}/>
+                </div>
+                <div className="text-center mt-5">
+                    <span className="badge badge-light m-2">Nickname</span>
+                    <span className="badge badge-info m-2">Pokemon</span>
+                </div>
             </div>
         )
     }
