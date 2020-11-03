@@ -8,6 +8,10 @@
   text-transform: capitalize;
 }
 
+.DetPoke a{
+  color: aliceblue;
+}
+
 @media (min-width: 260px) {
   .DetPoke-1 {
     padding-left: 26%;

@@ -1,17 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Table from 'react-bootstrap/Table'
 import 'components/MyPokemon/ThePokemon/index.css'
+import { PokemonContext } from '..';
 
 export default function Index(props) {
+    const context = useContext(PokemonContext)
+
     const [thePoke, setThePoke] = useState([]);
     const [nickName, setNickName] = useState('');
-    const [arrMyPoke, setArrMyPoke] = useState([]);
-    // const [arrMyPoke, setArrMyPoke] = useReducer(arrMyPokeReducer, [], () => {
-    //     const localdata = localStorage.getItem('dataCart');
-    //     return localdata ? JSON.parse(localdata) : [];
-    // })
     
-
     useEffect(() => {
         const abortController = new AbortController();
         const signal = abortController.signal;
@@ -28,29 +25,9 @@ export default function Index(props) {
         }
     })
 
-    const addItem = (id) => {
-        setArrMyPoke([...arrMyPoke, {
-            id: arrMyPoke.length,
-            ThePokemon: thePoke.name,
-            nickName: nickName,
-        }])
-        console.log(thePoke.name);
-        console.log(nickName);
-        console.log(id);
-        alert('Successfully Added')
-    }
-
-    useEffect(() => {
-        localStorage.setItem('dataCart', JSON.stringify(arrMyPoke))
-    })
-
     if(!nickName){
-        var resultnickName = prompt("Please enter your name:", "");
-        return setArrMyPoke([...arrMyPoke, {
-            id: arrMyPoke.length,
-            ThePokemon: thePoke.name,
-            nickName: setNickName(resultnickName),
-        }]);
+        var resultnickName = prompt('Please Enter the NickName','');
+        return setNickName(resultnickName);
     }else{
         return (
             <div className="thePoke">
@@ -67,18 +44,18 @@ export default function Index(props) {
                     <tr>
                         <td ><span className="badge badge-light">{nickName}</span></td>
                         <td><span className="badge badge-info">{thePoke.name}</span></td>
-                        <td ><button onClick={() => addItem(thePoke.id)} className="btn btn-danger btn-sm">Add</button></td>
+                        <td ><button onClick={() => context.addItem(nickName,thePoke.name)} className="btn btn-danger btn-sm">Add</button></td>
                     </tr>
                     </tbody>
                 </Table>
-                <ul>
+                {/* <ul>
                     {
-                        arrMyPoke.slice(1).map(p => 
+                        context.pokes.slice(1).map(p => 
                             <li>
-                                {p.ThePokemon} | {p.nickName}
+                                {p.thePoke} | {p.nickName}
                             </li>)
                     }
-                </ul>
+                </ul> */}
                 <span className="badge badge-info text-center ml-2 mt-5">Click Add to add your pokemon to MyPokemon</span>
             </div>
         )

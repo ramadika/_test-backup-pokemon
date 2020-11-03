@@ -1,24 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import Table from 'react-bootstrap/Table'
 import 'components/MyPokemon/AllMyPokemon/index.css'
+import { PokemonContext } from '..';
 
 export default function Index() {
-    const [pokemons, setPokemons] = useState({
-        pokes : [
-            { id:1, nickName: 'Purwanto', thePoke: 'Balbasaur'},
-            { id:2, nickName: 'Aris', thePoke: 'Ivysaur'},
-            { id:3, nickName: 'Insir', thePoke: 'Venusaur'},
-            { id:4, nickName: 'Kurti', thePoke: 'Charmander'},
-            { id:5, nickName: 'Mosis', thePoke: 'Charmeleon'},
-        ]
-    })
+    const context = useContext(PokemonContext)
 
-    const handleDelete = id => {
-        const pokes = pokemons.pokes.filter(c => c.id !== id);
-        setPokemons({pokes});
-    }
-
-
+    console.log(context.allPokes);
     return (
         <div className="allPoke">
             <h1 className="my-5 text-center">My Pokemon</h1>
@@ -32,15 +20,16 @@ export default function Index() {
                 </thead>
                 <tbody>
                 {
-                    pokemons.pokes.map(pkn =>
+                    context.allPokes.map(pkn =>
                         <tr>
                             <td ><span className="badge badge-light">{pkn.nickName}</span></td>
                             <td><span className="badge badge-light">{pkn.thePoke}</span></td>
-                            <td ><button onClick={() => handleDelete(pkn.id)} className="btn btn-danger btn-sm">Delete</button></td>
+                            <td ><button onClick={() => context.handleDelete(pkn.id)} className="btn btn-danger btn-sm">Delete</button></td>
                         </tr>)
                 }
                 </tbody>
             </Table>
+            <h6>{context.allPokes.nickName}</h6>
         </div>
     )
 }
