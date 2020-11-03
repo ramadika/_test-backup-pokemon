@@ -9,7 +9,8 @@ import App from 'App';
 import BaseLayout from 'components/BaseLayout'
 import PokemonList from 'components/PokemonList'
 import PokemonDetail from 'components/PokemonDetail'
-import MyPokemon from 'components/MyPokemon'
+import thePokemon from 'components/MyPokemon/ThePokemon'
+import AllMyPokemon from 'components/MyPokemon/AllMyPokemon'
 
 
 ReactDOM.render(
@@ -22,7 +23,8 @@ ReactDOM.render(
         <Route exact path="/" component={App}></Route>
         <Route path="/pokemonList" component={PokemonList}></Route>
         <Route exact path="/detail/:id" component={PokemonDetail}></Route>
-        <Route path="/myPokemon" component={MyPokemon}></Route>
+        <Route path="/thePokemon/:id" component={thePokemon}></Route>
+        <Route path="/allmypoke" component={AllMyPokemon}></Route>
       </BaseLayout>
     </Switch>
   </BrowserRouter>

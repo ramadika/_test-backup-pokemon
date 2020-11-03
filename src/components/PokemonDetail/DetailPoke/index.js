@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom'
 import 'components/PokemonDetail/DetailPoke/index.css'
 
-export default function index({pokeDetail}) {
+export default function Index({pokeDetail}) {
+
     return (
         <div className="container DetPoke">  
             <div className="row mt-5">
@@ -26,7 +28,7 @@ export default function index({pokeDetail}) {
                 </div>
             </div>
             <div className="row d-flex justify-content-center mt-5">
-                <button className="btn btn-danger">Catch</button>
+                <button className="btn btn-danger"><NavLink to={`/thePokemon/${pokeDetail.id}`}>Catch</NavLink></button>
             </div>
         </div>
     )

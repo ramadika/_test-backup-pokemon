@@ -20,9 +20,8 @@ export default function Index(props) {
         
         return function cleanup(){
             abortController.abort();
-    }
+        }
     })
-
 
     if(!isLoaded){
         return <div>Loading</div>
@@ -30,7 +29,7 @@ export default function Index(props) {
         return (
             <div className="PokeDet">
                 <h1 className="text-center mt-5">Pokemon Detail</h1>
-                <DetailPoke pokeDetail={pokeDetail}/>
+                <DetailPoke pokeDetail={pokeDetail} />
             </div>
         )
     }
