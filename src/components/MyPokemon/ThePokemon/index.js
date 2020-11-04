@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
+import { NavLink } from 'react-router-dom'
 import Table from 'react-bootstrap/Table'
 import 'components/MyPokemon/ThePokemon/index.css'
 import { PokemonContext } from '..';
@@ -42,13 +43,13 @@ export default function Index(props) {
                     </thead>
                     <tbody>
                     <tr>
-                        <td ><span className="badge badge-light">{nickName}</span></td>
+                        <td><span className="badge badge-light">{nickName}</span></td>
                         <td><span className="badge badge-info">{thePoke.name}</span></td>
-                        <td ><button onClick={() => context.addItem(nickName,thePoke.name)} className="btn btn-success btn-sm">Add</button></td>
+                        <td><button onClick={() => context.addItem(nickName,thePoke.name)} className="btn btn btn-outline-success btn-sm"><NavLink to="/allmypoke">Add</NavLink></button></td>
                     </tr>
                     </tbody>
                 </Table>
-                <span className="badge badge-info text-center ml-2 mt-5">Click Add to add your pokemon to MyPokemon</span>
+                <span className="badge badge-info text-center ml-4 mt-5">Click Add to add your pokemon to MyPokemon</span>
             </div>
         )
     }

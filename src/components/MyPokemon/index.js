@@ -1,10 +1,10 @@
-import {createContext, Component} from "react";
+import {createContext, Component} from "react"; 
 
 export const PokemonContext = createContext();
 
 class PokemonContextProvider extends Component {
     state = { 
-        allPokes : [], 
+        allPokes : [],
     }
 
     handleDelete = id => {
@@ -13,7 +13,7 @@ class PokemonContextProvider extends Component {
             this.setState({allPokes: allPokes});
         }
     }
-    
+
     addItem = (nickName, thePoke) => {
         const {allPokes} = this.state;
         const data = [{
@@ -22,6 +22,8 @@ class PokemonContextProvider extends Component {
             thePoke: thePoke,
         }]
         this.setState({allPokes: [...allPokes,...data]})
+        alert('Successfully Added');
+
     }
 
     componentDidUpdate(){
