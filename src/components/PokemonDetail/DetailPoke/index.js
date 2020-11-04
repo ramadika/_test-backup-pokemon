@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom'
 import 'components/PokemonDetail/DetailPoke/index.css'
 
 export default function Index({pokeDetail}) {
+    const [styleDisplay, setStyleDisplay] = useState('d-none');
+
+    const IsSuccess = () => {
+        const probability = Math.random() < 0.5;
+        let className = "btn btn-outline-success ml-3 ";
+        if(probability === true ){
+            className +=  "d-block";
+            setStyleDisplay(className)
+            alert('Successfully Caught');
+        }else{
+            className +=  "d-none";
+            setStyleDisplay(className)
+            alert('Failed');
+        }
+    }
 
     return (
         <div className="container DetPoke">  
@@ -28,7 +43,8 @@ export default function Index({pokeDetail}) {
                 </div>
             </div>
             <div className="row d-flex justify-content-center mt-5">
-                <button className="btn btn-danger"><NavLink to={`/thePokemon/${pokeDetail.id}`}>Catch</NavLink></button>
+                <button onClick={() => IsSuccess()} className="btn btn-danger">Catch</button>
+                <NavLink className={styleDisplay} to={`/thePokemon/${pokeDetail.id}`}>Get It</NavLink>
             </div>
         </div>
     )

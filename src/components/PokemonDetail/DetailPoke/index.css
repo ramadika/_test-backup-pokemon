@@ -8,8 +8,11 @@
   text-transform: capitalize;
 }
 
-.DetPoke a{
-  color: aliceblue;
+.DetPoke a:hover{
+    background-color:#ffffff;
+    color: #aee4bb;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 @media (min-width: 260px) {

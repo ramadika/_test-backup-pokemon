@@ -13,7 +13,7 @@ export default function Index() {
             <Table responsive="sm">
                 <thead>
                 <tr>
-                    <th>Nickname</th>
+                    <th className="pl-4">Nickname</th>
                     <th>Pokemon</th>
                     <th>Action</th>
                 </tr>
@@ -22,9 +22,9 @@ export default function Index() {
                 {
                     context.allPokes.map(pkn =>
                         <tr>
-                            <td ><span className="badge badge-light">{pkn.nickName}</span></td>
+                            <td className="pl-4"><span className="badge badge-light">{pkn.nickName}</span></td>
                             <td><span className="badge badge-light">{pkn.thePoke}</span></td>
-                            <td ><button onClick={() => context.handleDelete(pkn.id)} className="btn btn-danger btn-sm">Delete</button></td>
+                            <td><button onClick={() => context.handleDelete(pkn.id)} className="btn btn-danger btn-sm">Delete</button></td>
                         </tr>)
                 }
                 </tbody>

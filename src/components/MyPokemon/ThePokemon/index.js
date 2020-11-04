@@ -44,18 +44,10 @@ export default function Index(props) {
                     <tr>
                         <td ><span className="badge badge-light">{nickName}</span></td>
                         <td><span className="badge badge-info">{thePoke.name}</span></td>
-                        <td ><button onClick={() => context.addItem(nickName,thePoke.name)} className="btn btn-danger btn-sm">Add</button></td>
+                        <td ><button onClick={() => context.addItem(nickName,thePoke.name)} className="btn btn-success btn-sm">Add</button></td>
                     </tr>
                     </tbody>
                 </Table>
-                {/* <ul>
-                    {
-                        context.pokes.slice(1).map(p => 
-                            <li>
-                                {p.thePoke} | {p.nickName}
-                            </li>)
-                    }
-                </ul> */}
                 <span className="badge badge-info text-center ml-2 mt-5">Click Add to add your pokemon to MyPokemon</span>
             </div>
         )

@@ -1,12 +1,11 @@
 .onePokemon a {
-    /* position: absolute;
-    top: 15%; */
-    color: #e74c3c;
+    color: #28a745;
 }
 
 .onePokemon a:hover{
     text-decoration: none;
-    color: #c0392b;
+    color: #aee4bb;
+    transition: 0.3s;
 }
 
 @media (min-width: 300px) and (max-width: 568px) {

@@ -22,11 +22,6 @@ class PokemonContextProvider extends Component {
             thePoke: thePoke,
         }]
         this.setState({allPokes: [...allPokes,...data]})
-        // this.setState({allPokes: [...pokes, {
-        //     id: 6,
-        //     nickName: nickName,
-        //     thePoke: thePoke,
-        // }]})
     }
 
     componentDidUpdate(){
