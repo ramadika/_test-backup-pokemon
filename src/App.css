@@ -1,38 +1,53 @@
-.App {
+.imgBg {
+  margin-top: 8%;
+  width: 100%;
+  height: auto;
+  filter: brightness(30%);
+}
+
+.pokeApp{
+  position: absolute;
+  top: 1%;
+}
+
+.pokeApp h1 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 30pt;
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
+  margin: 10%;
+  margin-top: 40%;
+  color: #ffffff;
+  -webkit-text-stroke: 1px #28a745;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pokeApp button {
+  width: 55%;
+  margin-top: 5%;
+  margin-left: 24%;
+  padding: 5%;
+  border: 2px solid #28a745;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pokeApp a {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8pt;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pokeApp a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width:375px) and (max-width:812px){
+  .imgBg{margin-top: 10%;}
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pokeApp{
+  position: absolute;
+  top: 5%;
 }

@@ -1,62 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import PokemonList from './components/PokemonList'
+import React from 'react';
+import { NavLink } from 'react-router-dom'
+import ImgBg from 'assets/img/atul-vinayak-J8c1hkwrr-8-unsplash.jpg'
 import './App.css';
 
 function App() {
-  const [pokemonData, setPokemonData] = useState([])
-  const [loading, setLoading] = useState(true);
-  const initialURL = 'https://pokeapi.co/api/v2/pokemon'
-
-  useEffect(() => {
-    async function fetchData() {
-      let response = await getAllPokemon(initialURL)
-      await loadPokemon(response.results);
-      setLoading(false);
-    }
-    fetchData();
-  }, [])
-
-  const loadPokemon = async (data) => {
-    let _pokemonData = await Promise.all(data.map(async pokemon => {
-      let pokemonRecord = await getPokemon(pokemon)
-      return pokemonRecord
-    }))
-    setPokemonData(_pokemonData);
-  }
 
   return (
-    <>
-      <div>
-        {loading ? <h1 style={{ textAlign: 'center' }}>Loading...</h1> : (
-          <>
-            <React.Fragment>
-              <main className="container">
-                <PokemonList pokemons={pokemonData}/>
-              </main>
-            </React.Fragment>
-          </>
-        )}
+    <div>
+      <img src={ImgBg} alt="BgImg" className="imgBg"></img>
+      <div className=" pokeApp">
+        <h1>Pokemon</h1>
+        <div>
+          <button className="btn btn-outline-success"><NavLink to="/pokemonList">Pokemon List</NavLink></button>
+        </div>
+        <div>
+          <button className="btn btn-outline-success"><NavLink to="/allmypoke">My Pokemon</NavLink></button>
+        </div>
       </div>
-    </>
+    </div>
   );
-}
-
-export function getPokemon({ url }) {
-    return new Promise((resolve, reject) => {
-        fetch(url).then(res => res.json())
-            .then(data => {
-                resolve(data)
-            })
-    });
-}
-
-export async function getAllPokemon(url) {
-    return new Promise((resolve, reject) => {
-        fetch(url).then(res => res.json())
-            .then(data => {
-                resolve(data)
-            })
-    });
 }
 
 export default App;

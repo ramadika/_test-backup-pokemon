@@ -11,22 +11,19 @@ import PokemonList from 'components/PokemonList'
 import PokemonDetail from 'components/PokemonDetail'
 import ThePokemon from 'components/MyPokemon/ThePokemon'
 import AllMyPokemon from 'components/MyPokemon/AllMyPokemon'
-import PokemonContextProvider from 'components/MyPokemon';
+import PokemonContextProvider from 'components/PokemonContext'
 
 
 ReactDOM.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>
   <BrowserRouter>
     <Switch>
+      <Route exact path="/" component={App}></Route>
       <BaseLayout>
-        <Route exact path="/" component={App}></Route>
-        <Route path="/pokemonList" component={PokemonList}></Route>
-        <Route exact path="/detail/:id" component={PokemonDetail}></Route>
         <PokemonContextProvider>
-          <Route path="/thePokemon/:id" component={ThePokemon}></Route>
+          <Route path="/pokemonList" component={PokemonList}></Route>
+          <Route path="/detail/:id" component={PokemonDetail}></Route>
           <Route path="/allmypoke" component={AllMyPokemon}></Route>
+          <Route path="/thePokemon/:id" component={ThePokemon}></Route>
         </PokemonContextProvider>
       </BaseLayout>
     </Switch>

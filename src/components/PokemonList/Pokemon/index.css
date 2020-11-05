@@ -1,11 +1,27 @@
 .onePokemon a {
     color: #28a745;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .onePokemon a:hover{
     text-decoration: none;
     color: #aee4bb;
     transition: 0.3s;
+}
+
+.onePokemon .card{
+    border: 2px solid #aee4bb;
+}
+
+.onePokemon img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.onePokemon h5{
+    font-size: 12pt;
 }
 
 @media (min-width: 300px) and (max-width: 568px) {

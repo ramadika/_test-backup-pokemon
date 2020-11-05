@@ -27,8 +27,8 @@ export default function Index(props) {
         return <div>Loading</div>
     }else{
         return (
-            <div className="PokeDet">
-                <h1 className="text-center mt-5">Pokemon Detail</h1>
+            <div className="container PokeDet">
+                <h1 className="text-center">Pokemon Detail</h1>
                 <DetailPoke pokeDetail={pokeDetail} />
             </div>
         )

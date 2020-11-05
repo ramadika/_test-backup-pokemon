@@ -2,6 +2,9 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 18pt;
+  font-family: "Ubuntu", sans-serif;
+  color: #2f3640;
+  padding-top: 30%;
 }
 
 .thePoke a {
@@ -16,4 +19,25 @@
   color: #aee4bb;
   text-decoration: none;
   transition: 0.3s;
+}
+
+.thePoke h6{
+  font-size: 7pt;
+  color: #b2bec3;
+}
+
+.thePokenNick{
+  margin-left: 20%;
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.thePokenNick h3{
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+.thePokenNick h6{
+  color: black;
+  font-size: 12pt;
 }

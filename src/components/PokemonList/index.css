@@ -1,5 +1,17 @@
-.ListPoke h1{
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 18pt;
+.container {
+  background-color: #fcfcfc;
+}
+
+.ListPoke h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 18pt;
+  font-family: "Ubuntu", sans-serif;
+  color: #2f3640;
+}
+
+.ListPoke h6 {
+  font-size: 8pt;
+  color: #b2bec3;
+  letter-spacing: 1px;
 }

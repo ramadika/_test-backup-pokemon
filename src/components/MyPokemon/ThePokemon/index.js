@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { NavLink } from 'react-router-dom'
-import Table from 'react-bootstrap/Table'
 import 'components/MyPokemon/ThePokemon/index.css'
-import { PokemonContext } from '..';
+import { PokemonContext } from 'components/PokemonContext';
 
 export default function Index(props) {
     const context = useContext(PokemonContext)
@@ -31,25 +30,16 @@ export default function Index(props) {
         return setNickName(resultnickName);
     }else{
         return (
-            <div className="thePoke">
-                <h1 className="my-5 text-center">You Get It</h1>
-                <Table responsive="sm">
-                    <thead>
-                    <tr>
-                        <th>Nickname</th>
-                        <th>Pokemon</th>
-                        <th>Action</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><span className="badge badge-light">{nickName}</span></td>
-                        <td><span className="badge badge-info">{thePoke.name}</span></td>
-                        <td><button onClick={() => context.addItem(nickName,thePoke.name)} className="btn btn btn-outline-success btn-sm"><NavLink to="/allmypoke">Add</NavLink></button></td>
-                    </tr>
-                    </tbody>
-                </Table>
-                <span className="badge badge-info text-center ml-4 mt-5">Click Add to add your pokemon to MyPokemon</span>
+            <div className=" container thePoke">
+                <h1 className="mb-4 text-center">You Get It!</h1>
+                <div className="thePokenNick">
+                    <span className="badge badge-success m-2">NickName</span>
+                    <h6 className="text-left">{nickName}</h6>
+                    <span className="badge badge-success m-2">Pokemon</span>
+                    <h3 className="text-left">{thePoke.name}</h3>
+                    <td><button onClick={() => context.handleAdd(nickName,thePoke.name)} className="btn btn btn-outline-success btn-sm mt-3"><NavLink to="/allmypoke">Add</NavLink></button></td>
+                </div>
+                <h6 className="ml-2 my-5"><b>Notes:</b> Click <span className="badge badge-success"> Add </span> to add your pokemon to <b>My Pokemon</b></h6>
             </div>
         )
     }

@@ -26,16 +26,16 @@ export default function Index({pokeDetail}) {
                     <img src={pokeDetail.sprites.front_default} alt="thePoke" width={150}></img>
                 </div>
                 <div className="col DetPokeCol-2">
-                    <span className="badge badge-primary m-2">Names</span>
+                    <span className="badge badge-success m-2">Names</span>
                     <h3 className="text-left">{pokeDetail.name}</h3>
-                    <span className="badge badge-primary m-2">Moves</span>
+                    <span className="badge badge-success m-2">Moves</span>
                     <ul>
                         {pokeDetail.moves.map(move=>
                             <li>
                                 {move.move.name}
                             </li>)}
                     </ul>
-                    <span className="badge badge-primary m-2">Types</span>
+                    <span className="badge badge-success m-2">Types</span>
                     {pokeDetail.types.map(type=>
                         <div className="badge">
                             {type.type.name}

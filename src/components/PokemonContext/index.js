@@ -5,6 +5,7 @@ export const PokemonContext = createContext();
 class PokemonContextProvider extends Component {
     state = { 
         allPokes : [],
+        total: 0,
     }
 
     handleDelete = id => {
@@ -12,22 +13,29 @@ class PokemonContextProvider extends Component {
             const allPokes = this.state.allPokes.filter(c => c.id !== id);
             this.setState({allPokes: allPokes});
         }
+        const allPokesLength = this.state.allPokes.length;
+        const ownedTotal = allPokesLength - 1;
+        this.setState({total : ownedTotal});
     }
 
-    addItem = (nickName, thePoke) => {
+    handleAdd = (nickName, thePoke) => {
         const {allPokes} = this.state;
+        const allPokesLength = allPokes.length;
+        const ID = Math.random().toString(36).substr(2,9);
         const data = [{
-            id: allPokes.length + 1,
+            id: ID,
             nickName: nickName,
             thePoke: thePoke,
         }]
         this.setState({allPokes: [...allPokes,...data]})
+        const ownedTotal = allPokesLength + 1;
+        this.setState({total: ownedTotal})
         alert('Successfully Added');
-
     }
 
     componentDidUpdate(){
         localStorage.setItem('dataPokemon', JSON.stringify(this.state.allPokes))
+        localStorage.setItem('dataTotal', JSON.stringify(this.state.total))
     };
 
     componentDidMount(){
@@ -35,14 +43,18 @@ class PokemonContextProvider extends Component {
         if(dataCart !== null){
             this.setState({allPokes: dataCart});
         }
+        const ownedTotal = JSON.parse(localStorage.getItem('dataTotal'));
+        if(ownedTotal !== null){
+            this.setState({total: ownedTotal});
+        }
     }
     
     render() { 
-        const {allPokes} = this.state;
-        const {handleDelete, addItem} = this;
+        const {allPokes, total, initialURL} = this.state;
+        const {handleDelete, handleAdd} = this;
 
         return ( 
-            <PokemonContext.Provider value={{allPokes, handleDelete, addItem}}>
+            <PokemonContext.Provider value={{total, initialURL, allPokes, handleDelete, handleAdd}}>
                 {this.props.children}
             </PokemonContext.Provider>
          );
