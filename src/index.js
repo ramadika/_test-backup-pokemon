@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+// import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css'
 
@@ -15,7 +16,7 @@ import PokemonContextProvider from 'components/PokemonContext'
 
 
 ReactDOM.render(
-  <BrowserRouter>
+  <Router>
     <Switch>
       <Route exact path="/" component={App}></Route>
       <BaseLayout>
@@ -27,7 +28,7 @@ ReactDOM.render(
         </PokemonContextProvider>
       </BaseLayout>
     </Switch>
-  </BrowserRouter>
+  </Router>
   ,
   document.getElementById('root')
 );
