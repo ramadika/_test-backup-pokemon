@@ -14,7 +14,6 @@
 - [Usage](#usage-for-development)
 - [Screenshots](#screenshots)
 - [Release web](#release-apk)
-- [Contributors](#contributors)
 
 ## Introduction
 <b>Pokemon - Web App</b> is an application to catch the Pokemon based on Web. There are several books with famous authors and can read a brief synopsis by looking at the details of the book
@@ -45,18 +44,18 @@ The purpose of this application is for people to borrow books online and easily
 
 ## Screenshots
 <div align="center">
-    <img width="100" src="./src/app-screenshots/Home.jpeg">
-    <img width="100" src="./src/app-screenshots/Pokemon List.jpeg">
-    <img width="100" src="./src/app-screenshots/My Pokemon.jpeg">
-    <img width="100" src="./src/app-screenshots/Pokemon Detail - 1.jpeg">
-    <img width="100" src="./src/app-screenshots/Pokemon Detail - 2.jpeg">
-    <img width="100" src="./src/app-screenshots/Failed.jpeg">
-    <img width="100" src="./src/app-screenshots/Succesfully Caught.jpeg">
-    <img width="100" src="./src/app-screenshots/Get It.jpeg">
-    <img width="100" src="./src/app-screenshots/Enter Nickname.jpeg">
-    <img width="100" src="./src/app-screenshots/Get the Pokemon.jpeg">
+    <img width="100" src="./src/app-screenshots/Home.png">
+    <img width="100" src="./src/app-screenshots/Pokemon List.png">
+    <img width="100" src="./src/app-screenshots/My Pokemon.png">
+    <img width="100" src="./src/app-screenshots/Pokemon Detail - 1.png">
+    <img width="100" src="./src/app-screenshots/Pokemon Detail - 2.png">
+    <img width="100" src="./src/app-screenshots/Failed.png">
+    <img width="100" src="./src/app-screenshots/Succesfully Caught.png">
+    <img width="100" src="./src/app-screenshots/Get It.png">
+    <img width="100" src="./src/app-screenshots/Enter Nickname.png">
+    <img width="100" src="./src/app-screenshots/Get the Pokemon.png">
     <img width="100" src="./src/app-screenshots/Successfully Added.png">
 </div>
 
 ## Release Web
-**Pokemon - Web App** can access[here](https://ramadika.github.io/backup-pokemon/#/)
+**Pokemon - Web App** can access [here](https://ramadika.github.io/backup-pokemon/#/)
