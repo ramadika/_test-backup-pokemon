@@ -1,4 +1,6 @@
+// Dependencies
 import React, { Component } from 'react'
+// Internals
 import NavBar from 'components/BaseLayout/NavBar'
 import Footer from 'components/BaseLayout/Footer'
 

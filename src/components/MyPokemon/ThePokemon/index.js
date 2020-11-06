@@ -1,18 +1,21 @@
+// Dependencies
 import React, { useState, useEffect, useContext } from 'react';
 import { NavLink } from 'react-router-dom'
-import 'components/MyPokemon/ThePokemon/index.css'
 import { PokemonContext } from 'components/PokemonContext';
+// Internals
+import 'components/MyPokemon/ThePokemon/index.css'
 
 export default function Index(props) {
     const context = useContext(PokemonContext)
 
     const [thePoke, setThePoke] = useState([]);
     const [nickName, setNickName] = useState('');
+    const URL = context.initialURL+props.match.params.id;
     
     useEffect(() => {
         const abortController = new AbortController();
         const signal = abortController.signal;
-        fetch("https://pokeapi.co/api/v2/pokemon/"+props.match.params.id, {signal: signal})
+        fetch(URL, {signal: signal})
         .then(res => res.json())
         .then(
             (result) => {

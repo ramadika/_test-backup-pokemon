@@ -1,5 +1,7 @@
+// Dependencies
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+// Internals
 import 'components/PokemonList/Pokemon/index.css'
 
 export default function index(props) {

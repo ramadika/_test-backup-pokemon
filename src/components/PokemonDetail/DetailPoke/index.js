@@ -1,5 +1,7 @@
+// Dependencies
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom'
+// Internals
 import 'components/PokemonDetail/DetailPoke/index.css'
 
 export default function Index({pokeDetail}) {

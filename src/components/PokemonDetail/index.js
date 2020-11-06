@@ -1,15 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import DetailPoke from 'components/PokemonDetail/DetailPoke'
+// Dependencies
+import React, { useState, useEffect, useContext } from 'react';
+import { PokemonContext } from 'components/PokemonContext';
+// Internals
 import 'components/PokemonDetail/index.css'
+import DetailPoke from 'components/PokemonDetail/DetailPoke'
 
 export default function Index(props) {
+    const context = useContext(PokemonContext)
+
     const [pokeDetail, setPokeDetail] = useState([]);
-    const [isLoaded, setLoading] = useState(false);
+    const [isLoaded, setLoading] = useState(context.isLoaded);
+    const URL = context.initialURL+props.match.params.id
 
     useEffect(() => {
         const abortController = new AbortController();
         const signal = abortController.signal;
-        fetch("https://pokeapi.co/api/v2/pokemon/"+props.match.params.id, {signal: signal})
+        fetch(URL, {signal: signal})
         .then(res => res.json())
         .then(
             (result) => {
@@ -24,7 +30,7 @@ export default function Index(props) {
     })
 
     if(!isLoaded){
-        return <div>Loading</div>
+        return <div><h1 className="text-center pt-5">Loading...</h1></div>
     }else{
         return (
             <div className="container PokeDet">

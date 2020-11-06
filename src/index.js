@@ -1,8 +1,10 @@
+// Dependencies
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-// import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+
+// Internals
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css'
 

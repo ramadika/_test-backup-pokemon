@@ -1,5 +1,7 @@
+// Dependencies
 import React from 'react';
 import { NavLink } from 'react-router-dom'
+// Internals
 import ImgBg from 'assets/img/atul-vinayak-J8c1hkwrr-8-unsplash.jpg'
 import './App.css';
 

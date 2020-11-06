@@ -1,4 +1,6 @@
+// Dependencies
 import React from 'react'
+// Internals
 import 'components/BaseLayout/Footer/index.css'
 
 export default function index() {

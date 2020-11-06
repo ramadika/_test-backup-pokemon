@@ -6,6 +6,8 @@ class PokemonContextProvider extends Component {
     state = { 
         allPokes : [],
         total: 0,
+        initialURL: "https://pokeapi.co/api/v2/pokemon/",
+        isLoaded: false,
     }
 
     handleDelete = id => {
@@ -50,11 +52,11 @@ class PokemonContextProvider extends Component {
     }
     
     render() { 
-        const {allPokes, total, initialURL} = this.state;
+        const {allPokes, total, initialURL, isLoaded} = this.state;
         const {handleDelete, handleAdd} = this;
 
         return ( 
-            <PokemonContext.Provider value={{total, initialURL, allPokes, handleDelete, handleAdd}}>
+            <PokemonContext.Provider value={{total, initialURL, isLoaded, allPokes, handleDelete, handleAdd}}>
                 {this.props.children}
             </PokemonContext.Provider>
          );
