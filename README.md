@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+<h1 align="center">Pokemon - Web App</h1>
+<p align="center">
+  <img width="250" src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"/>
+</p>
+<p align="center">
+  Built with ReactJs.
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Introduction](#introduction)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Usage](#usage-for-development)
+- [Screenshots](#screenshots)
+- [Release web](#release-apk)
+- [Contributors](#contributors)
 
-In the project directory, you can run:
+## Introduction
+<b>Pokemon - Web App</b> is an application to catch the Pokemon based on Web. There are several books with famous authors and can read a brief synopsis by looking at the details of the book
 
-### `yarn start`
+The purpose of this application is for people to borrow books online and easily
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
+* User can see list of Pokemon
+* User can see all Pokemon that have been caught by him
+* Showing List of Pokemon's Names and a picture of the Pokemon
+* User also can see the Owned Total of all Pokemon that have been caught by him inside Pokemon List page
+* List of Pokemon can be clicked to see Pokemon detail
+* Inside the Pokemon detail page, user can see a picture of the Pokemon with its moves and types
+* There is a button to catch the Pokemon inside the Pokemon detail page
+* if success then user can give the Pokemon a nickname and add that Pokemon to `My Pokemon List’
+* Pokemon that have been caught by user can be seen inside My Pokemon List page
+* Pokemon that is on My Pokemon List also be possible to remove from the list
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Requirements
+* [`npm`](https://www.npmjs.com/get-npm)
+* [`reactjs`](https://reactjs.org/docs/getting-started.html)
 
-### `yarn test`
+## Usage for development
+1. Open your terminal or command prompt
+2. Type `git clone https://github.com/ramadika/backup-pokemon.git`
+3. Open the folder and type `npm install` for install dependencies
+4. Type `npm start` for run this app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
+<!-- <div align="center">
+    <img width="250" src="./src/img/3.png">
+    <img width="250" src="./src/img/2.png">
+    <img width="250" src="./src/img/4.png"">
+    <img width="250" src="./src/img/1.png"">
+    <img width="250" src="./src/img/6.png"">
+</div> -->
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Release Web
+**Pokemon - Web App can access**[here](https://ramadika.github.io/backup-pokemon/#/)
