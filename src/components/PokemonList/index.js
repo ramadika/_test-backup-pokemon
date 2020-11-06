@@ -32,7 +32,7 @@ export default function Index() {
             {loading ? <h1 className="text-center pt-5">Loading...</h1> : (
             <>
                 <div className="ListPoke mt-3">
-                    <h1 className="text-center pt-5">Pokemon List</h1>
+                    <h1 className="text-center">Pokemon List</h1>
                     <h6 className="text-center mb-4">Total Owned <span className="badge badge-success"> {context.total}</span></h6>
                     {pokemonData.map(pokemon => 
                         <Pokemon key={pokemon.id} pokemon={pokemon} total={context.total}/>)}

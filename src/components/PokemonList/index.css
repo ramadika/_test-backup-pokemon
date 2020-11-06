@@ -2,12 +2,13 @@
   background-color: #fcfcfc;
 }
 
-.ListPoke h1 {
+h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 18pt;
   font-family: "Ubuntu", sans-serif;
   color: #2f3640;
+  padding-top: 15%;
 }
 
 .ListPoke h6 {
