@@ -10,7 +10,7 @@ export default function Index() {
 
     return (
         <div className="allPoke container">
-            <h1 className="mb-5 text-center">My Pokemon</h1>
+            <h1 className="mb-5 text-center">My Pokemon List</h1>
             <Table responsive="sm">
                 <thead>
                 <tr>
