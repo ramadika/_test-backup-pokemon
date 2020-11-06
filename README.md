@@ -53,4 +53,4 @@ The purpose of this application is for people to borrow books online and easily
 </div> -->
 
 ## Release Web
-**Pokemon - Web App can access**[here](https://ramadika.github.io/backup-pokemon/#/)
+**Pokemon - Web App can access [here]**(https://ramadika.github.io/backup-pokemon/#/)
