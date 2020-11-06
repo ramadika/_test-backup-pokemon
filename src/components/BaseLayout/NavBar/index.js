@@ -15,7 +15,7 @@ function index() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <NavLink className="nav-link" to="/pokemonList">Pokemon List</NavLink>
-                        <NavLink className="nav-link" to="/allmypoke">My Pokemon List</NavLink>
+                        <NavLink className="nav-link" to="/allmypoke">My Pokemon List</NavLink> 
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
