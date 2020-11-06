@@ -14,7 +14,7 @@ function App() {
           <NavLink className="btn btn-outline-success" to="/pokemonList">Pokemon List</NavLink>
         </div>
         <div>
-          <NavLink className="btn btn-outline-success" to="/pokemonList">My Pokemon</NavLink>
+          <NavLink className="btn btn-outline-success" to="/allmypoke">My Pokemon</NavLink>
         </div>
       </div>
     </div>
