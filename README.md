@@ -44,13 +44,19 @@ The purpose of this application is for people to borrow books online and easily
 4. Type `npm start` for run this app.
 
 ## Screenshots
-<!-- <div align="center">
-    <img width="250" src="./src/img/3.png">
-    <img width="250" src="./src/img/2.png">
-    <img width="250" src="./src/img/4.png"">
-    <img width="250" src="./src/img/1.png"">
-    <img width="250" src="./src/img/6.png"">
-</div> -->
+<div align="center">
+    <img width="100" src="./src/app-screenshots/Home.jpeg">
+    <img width="100" src="./src/app-screenshots/Pokemon List.jpeg">
+    <img width="100" src="./src/app-screenshots/My Pokemon.jpeg">
+    <img width="100" src="./src/app-screenshots/Pokemon Detail - 1.jpeg">
+    <img width="100" src="./src/app-screenshots/Pokemon Detail - 2.jpeg">
+    <img width="100" src="./src/app-screenshots/Failed.jpeg">
+    <img width="100" src="./src/app-screenshots/Succesfully Caught.jpeg">
+    <img width="100" src="./src/app-screenshots/Get It.jpeg">
+    <img width="100" src="./src/app-screenshots/Enter Nickname.jpeg">
+    <img width="100" src="./src/app-screenshots/Get the Pokemon.jpeg">
+    <img width="100" src="./src/app-screenshots/Successfully Added.jpeg">
+</div>
 
 ## Release Web
-**Pokemon - Web App can access [here]**(https://ramadika.github.io/backup-pokemon/#/)
+**Pokemon - Web App** can access[here](https://ramadika.github.io/backup-pokemon/#/)
