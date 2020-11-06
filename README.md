@@ -10,9 +10,9 @@
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Release web](#release-apk)
+- [Release web](#release-web)
 - [Requirements](#requirements)
-- [Usage](#usage-for-development)
+- [Usage for Development](#usage-for-development)
 - [Screenshots](#screenshots)
 
 ## Introduction
@@ -30,8 +30,8 @@
 * Pokemon that have been caught by user can be seen inside My Pokemon List page
 * Pokemon that is on My Pokemon List also be possible to remove from the list
 
-## Release Web
-**Pokemon - Web App** can access [here](https://ramadika.github.io/backup-pokemon/#/)
+## Release-Web
+**Pokemon - Web App** can be accessed [here](https://ramadika.github.io/backup-pokemon/#/)
 
 ## Requirements
 * [`npm`](https://www.npmjs.com/get-npm)
