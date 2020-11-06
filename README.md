@@ -55,7 +55,7 @@ The purpose of this application is for people to borrow books online and easily
     <img width="100" src="./src/app-screenshots/Get It.jpeg">
     <img width="100" src="./src/app-screenshots/Enter Nickname.jpeg">
     <img width="100" src="./src/app-screenshots/Get the Pokemon.jpeg">
-    <img width="100" src="./src/app-screenshots/Successfully Added.jpeg">
+    <img width="100" src="./src/app-screenshots/Successfully Added.png">
 </div>
 
 ## Release Web
