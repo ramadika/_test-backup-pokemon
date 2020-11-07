@@ -28,16 +28,15 @@
 
 .thePokenNick{
   margin-left: 20%;
-  text-transform: capitalize;
   font-family: "Ubuntu", sans-serif;
 }
 
 .thePokenNick h3{
-  font-family: "Ubuntu", sans-serif;
+  text-transform: capitalize;
 }
 
 
-.thePokenNick h6{
+.thePokenNick h4{
   color: black;
   font-size: 12pt;
 }

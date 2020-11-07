@@ -14,10 +14,10 @@ class PokemonContextProvider extends Component {
         if(window.confirm("Do you want to delete this pokemon?")){
             const allPokes = this.state.allPokes.filter(c => c.id !== id);
             this.setState({allPokes: allPokes});
+            const allPokesLength = this.state.allPokes.length;
+            const ownedTotal = allPokesLength - 1;
+            this.setState({total : ownedTotal});
         }
-        const allPokesLength = this.state.allPokes.length;
-        const ownedTotal = allPokesLength - 1;
-        this.setState({total : ownedTotal});
     }
 
     handleAdd = (nickName, thePoke) => {
