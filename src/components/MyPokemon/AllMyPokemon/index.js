@@ -23,14 +23,13 @@ export default function Index() {
                 {
                     context.allPokes.map(pkn =>
                         <tr>
-                            <td className="pl-4"><span className="badge badge-light">{pkn.nickName}</span></td>
-                            <td className="text-capitalize"><span className="badge badge-light">{pkn.thePoke}</span></td>
+                            <td className="pl-4" data-testid="nickname"><span className="badge badge-light">{pkn.nickName}</span></td>
+                            <td className="text-capitalize" data-testid="thePoke"><span className="badge badge-light">{pkn.thePoke}</span></td>
                             <td><button onClick={() => context.handleDelete(pkn.id)} className="btn btn-danger btn-sm">Delete</button></td>
                         </tr>)
                 }
                 </tbody>
             </Table>
-            <h6>{context.allPokes.nickName}</h6>
         </div>
     )
 }

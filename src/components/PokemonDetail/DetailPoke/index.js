@@ -25,11 +25,11 @@ export default function Index({pokeDetail}) {
         <div className="container DetPoke">  
             <div className="row mt-5">
                 <div className="col mr-5 DetPoke-1">
-                    <img src={pokeDetail.sprites.front_default} alt="thePoke" width={150}></img>
+                    <img data-testid="imgPoke" src={pokeDetail.sprites.front_default} alt="thePoke" width={150}></img>
                 </div>
                 <div className="col DetPokeCol-2">
                     <span className="badge badge-success m-2">Names</span>
-                    <h3 className="text-left">{pokeDetail.name}</h3>
+                    <h3 className="text-left" data-testid="nameDetail">{pokeDetail.name}</h3>
                     <span className="badge badge-success m-2">Moves</span>
                     <ul>
                         {pokeDetail.moves.map(move=>
@@ -46,7 +46,7 @@ export default function Index({pokeDetail}) {
             </div>
             <div className="row d-flex justify-content-center mt-5">
                 <button onClick={() => IsSuccess()} className="btn btn-danger">Catch</button>
-                <NavLink className={styleDisplay} to={`/thePokemon/${pokeDetail.id}`}>Get It</NavLink>
+                <NavLink data-testid="idDetail" className={styleDisplay} to={`/thePokemon/${pokeDetail.id}`}>Get It</NavLink>
             </div>
         </div>
     )
