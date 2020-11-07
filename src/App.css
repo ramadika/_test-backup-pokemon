@@ -1,5 +1,4 @@
 .imgBg {
-  margin-top: 8%;
   width: 100%;
   height: auto;
   filter: brightness(30%);
@@ -41,9 +40,9 @@
   transition: 0.3s;
 }
 
-@media (min-width: 375px) and (max-width: 812px) {
+@media (min-width: 300px) and (max-width: 812px) {
   .imgBg {
-    margin-top: 10%;
+    margin-top: 8%;
   }
 }
 .pokeApp {

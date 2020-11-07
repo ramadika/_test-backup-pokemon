@@ -6,13 +6,16 @@ import 'components/PokemonDetail/DetailPoke/index.css'
 
 export default function Index({pokeDetail}) {
     const [styleDisplay, setStyleDisplay] = useState('d-none');
+    const [btnDisplay, setbtnDisplay] = useState('btn btn-danger');
 
     const IsSuccess = () => {
         const probability = Math.random() < 0.5;
-        let className = "btn btn-outline-success ml-3 ";
+        let className = "btn btn-outline-success ";
         if(probability === true ){
             className +=  "d-block";
+            const btnClass = "d-none";
             setStyleDisplay(className)
+            setbtnDisplay(btnClass)
             alert('Successfully Caught');
         }else{
             className +=  "d-none";
@@ -45,7 +48,7 @@ export default function Index({pokeDetail}) {
                 </div>
             </div>
             <div className="row d-flex justify-content-center mt-5">
-                <button onClick={() => IsSuccess()} className="btn btn-danger">Catch</button>
+                <button onClick={() => IsSuccess()} className={btnDisplay}>Catch</button>
                 <NavLink data-testid="idDetail" className={styleDisplay} to={`/thePokemon/${pokeDetail.id}`}>Get It</NavLink>
             </div>
         </div>
