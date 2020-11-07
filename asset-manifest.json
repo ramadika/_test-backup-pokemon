@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/backup-pokemon/static/css/main.0aa7f80e.chunk.css",
-    "main.js": "/backup-pokemon/static/js/main.4cac199c.chunk.js",
-    "main.js.map": "/backup-pokemon/static/js/main.4cac199c.chunk.js.map",
+    "main.css": "/backup-pokemon/static/css/main.414f931b.chunk.css",
+    "main.js": "/backup-pokemon/static/js/main.11f3b880.chunk.js",
+    "main.js.map": "/backup-pokemon/static/js/main.11f3b880.chunk.js.map",
     "runtime-main.js": "/backup-pokemon/static/js/runtime-main.c384016b.js",
     "runtime-main.js.map": "/backup-pokemon/static/js/runtime-main.c384016b.js.map",
     "static/css/2.95f25948.chunk.css": "/backup-pokemon/static/css/2.95f25948.chunk.css",
-    "static/js/2.10d8fa64.chunk.js": "/backup-pokemon/static/js/2.10d8fa64.chunk.js",
-    "static/js/2.10d8fa64.chunk.js.map": "/backup-pokemon/static/js/2.10d8fa64.chunk.js.map",
+    "static/js/2.727129c8.chunk.js": "/backup-pokemon/static/js/2.727129c8.chunk.js",
+    "static/js/2.727129c8.chunk.js.map": "/backup-pokemon/static/js/2.727129c8.chunk.js.map",
     "static/js/3.b04e5a62.chunk.js": "/backup-pokemon/static/js/3.b04e5a62.chunk.js",
     "static/js/3.b04e5a62.chunk.js.map": "/backup-pokemon/static/js/3.b04e5a62.chunk.js.map",
     "index.html": "/backup-pokemon/index.html",
     "static/css/2.95f25948.chunk.css.map": "/backup-pokemon/static/css/2.95f25948.chunk.css.map",
-    "static/css/main.0aa7f80e.chunk.css.map": "/backup-pokemon/static/css/main.0aa7f80e.chunk.css.map",
-    "static/js/2.10d8fa64.chunk.js.LICENSE.txt": "/backup-pokemon/static/js/2.10d8fa64.chunk.js.LICENSE.txt",
+    "static/css/main.414f931b.chunk.css.map": "/backup-pokemon/static/css/main.414f931b.chunk.css.map",
+    "static/js/2.727129c8.chunk.js.LICENSE.txt": "/backup-pokemon/static/js/2.727129c8.chunk.js.LICENSE.txt",
     "static/media/atul-vinayak-J8c1hkwrr-8-unsplash.c082143a.jpg": "/backup-pokemon/static/media/atul-vinayak-J8c1hkwrr-8-unsplash.c082143a.jpg",
     "static/media/index.css": "/backup-pokemon/static/media/kamil-s-J1IbThTQJoY-unsplash.48a28ce0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c384016b.js",
     "static/css/2.95f25948.chunk.css",
-    "static/js/2.10d8fa64.chunk.js",
-    "static/css/main.0aa7f80e.chunk.css",
-    "static/js/main.4cac199c.chunk.js"
+    "static/js/2.727129c8.chunk.js",
+    "static/css/main.414f931b.chunk.css",
+    "static/js/main.11f3b880.chunk.js"
   ]
 }
